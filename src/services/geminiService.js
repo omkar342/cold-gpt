@@ -1,3 +1,25 @@
+/**
+ * GeminiService
+ *
+ * This service provides an abstraction layer for interacting with the Google Gemini API.
+ * It uses Axios to send text-based prompts and handle conversational history.
+ *
+ * Key Features:
+ * - Sends user messages to the Gemini model and retrieves responses.
+ * - Supports conversation history by mapping prior messages into the expected Gemini format.
+ * - Handles API errors gracefully with descriptive error messages.
+ * - Dynamically configures API URL, model, API key, and other generation parameters via getConfig().
+ *
+ * Note:
+ * This is a simulated response integration. To get real AI responses,
+ * please add your valid Google Gemini API key in the settings.
+ *
+ * Example:
+ *   const gemini = new GeminiService('<API_KEY>');
+ *   const response = await gemini.sendMessage("Hello Gemini!");
+ *   console.log(response); // AI-generated reply
+ */
+
 import axios from 'axios';
 import { getConfig } from '../config';
 

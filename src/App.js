@@ -4,7 +4,7 @@ import ChatInput from './components/ChatInput';
 import Sidebar from './components/Sidebar';
 import GeminiService from './services/geminiService';
 import { getConfig, validateConfig } from './config';
-import { MessageCircle, Bot, User, Settings, Plus } from 'lucide-react';
+import { MessageCircle, Bot, Settings } from 'lucide-react';
 
 function App() {
   const [messages, setMessages] = useState([
